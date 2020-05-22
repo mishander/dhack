@@ -20,6 +20,17 @@ namespace recognition_test
         [DllImport("User32.dll")]
         public static extern Int32 SetForegroundWindow(int hWnd);
 
+        private string RegexTextSinglePattern(string text, string pattern)
+        {
+            // Create a Regex  
+            Regex rg = new Regex(pattern);
+            MatchCollection matchedAuthors = rg.Matches(text);
+            if (matchedAuthors.Count > 0)
+                return matchedAuthors[0].Value;
+            else
+                return "";
+        }
+
         private string[] name_patterns = { "КЛОПОТАННЯ", "КЛОПОТАННЯ про проведення кваліфікаційної експертизи на винахід"};
         private string doc_number = "Реєстраційний номер заявки";
         private string[] files;
@@ -29,42 +40,17 @@ namespace recognition_test
             foreach (string pattern in name_patterns)
             {
                 if (line.Contains(pattern))
+                {
                     this.NameText.Text = pattern;
+                    RecognizedMainText.Text = RegexTextSinglePattern(line, "(?<=" + pattern + ")[\\r\\n]+([^\\r\\n]+)");
+                }
             }
-            if (line.Contains(doc_number))
-            {
-                string pattern = doc_number + "*$";
-                // Create a Regex  
-                Regex rg = new Regex(pattern);
-                MatchCollection matchedAuthors = rg.Matches(line);
-                if (matchedAuthors.Count > 0)
-                    DocNumberText.Text = matchedAuthors[0].Value;
-            }
-            if (line.Contains("а 20")|| line.Contains("а20"))
-            {
-                string pattern = "а.?20\\d{1,3}.?\\d{0,5}";
-                Regex rg = new Regex(pattern);
-                MatchCollection matchedAuthors = rg.Matches(line);
-                if (matchedAuthors.Count > 0)
-                    DocNumberText.Text = matchedAuthors[0].Value;
-            }
-            if (line.Contains("а 20") || line.Contains("а20"))
-            {
-                string pattern = "а.?20(?:(?!$).)*";
-                Regex rg = new Regex(pattern);
-                MatchCollection matchedAuthors = rg.Matches(line);
-                if (matchedAuthors.Count > 0)
-                    DocNumberFullText.Text = matchedAuthors[0].Value;
-            }
-
-            if (line.Contains("Патентний повірений"))
-            {
-                string pattern = "Патентний повірений(?:(?!$).)*";
-                Regex rg = new Regex(pattern);
-                MatchCollection matchedAuthors = rg.Matches(line);
-                if (matchedAuthors.Count > 0)
-                    ppText.Text = matchedAuthors[0].Value;
-            }
+            //doc number regexp:
+            DocNumberText.Text = RegexTextSinglePattern(line, "а.?20\\d{1,3}.?\\d{0,5}");
+            //doc number line
+            DocNumberFullText.Text = RegexTextSinglePattern(line, "а.?20(?:(?!$).)*");
+            // who
+            ppText.Text = RegexTextSinglePattern(line, "Патентний повірений(?:(?!$).)*");
         }
         private void Open()
         {
@@ -86,6 +72,7 @@ namespace recognition_test
             string filename = files[current_index];
             current_index++;
             LoadFile(filename);
+            buttonNext.Enabled = true;
         }
         public Form1()
         {
@@ -103,6 +90,7 @@ namespace recognition_test
             this.DocNumberFullText.Clear();
             this.DocNumberText.Clear();
             this.NameText.Clear();
+            this.RecognizedMainText.Clear();
             this.pictureBox1.Image = Image.FromFile(filename);
             this.pictureBox1.Refresh();
             var proc = new Process();

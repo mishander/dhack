@@ -33,12 +33,12 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainText = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonNext = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.DocNumberText = new System.Windows.Forms.TextBox();
             this.NameText = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.RecognizedMainText = new System.Windows.Forms.TextBox();
             this.ppText = new System.Windows.Forms.TextBox();
             this.DocNumberFullText = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,7 +50,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Location = new System.Drawing.Point(0, 28);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(750, 668);
+            this.pictureBox1.Size = new System.Drawing.Size(750, 598);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -62,7 +62,7 @@
             this.openToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1561, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1582, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -83,16 +83,17 @@
             this.MainText.TabIndex = 2;
             this.MainText.Text = resources.GetString("MainText.Text");
             // 
-            // button1
+            // buttonNext
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Location = new System.Drawing.Point(1501, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 668);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "next";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonNext.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonNext.Enabled = false;
+            this.buttonNext.Location = new System.Drawing.Point(1522, 28);
+            this.buttonNext.Name = "buttonNext";
+            this.buttonNext.Size = new System.Drawing.Size(60, 598);
+            this.buttonNext.TabIndex = 3;
+            this.buttonNext.Text = "next";
+            this.buttonNext.UseVisualStyleBackColor = true;
+            this.buttonNext.Click += new System.EventHandler(this.button1_Click);
             // 
             // folderBrowserDialog1
             // 
@@ -102,49 +103,50 @@
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(1228, 48);
+            this.textBox1.Location = new System.Drawing.Point(1207, 48);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(267, 22);
+            this.textBox1.Size = new System.Drawing.Size(309, 22);
             this.textBox1.TabIndex = 4;
             // 
             // DocNumberText
             // 
             this.DocNumberText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.DocNumberText.Location = new System.Drawing.Point(1228, 237);
+            this.DocNumberText.Location = new System.Drawing.Point(1207, 237);
             this.DocNumberText.Name = "DocNumberText";
-            this.DocNumberText.Size = new System.Drawing.Size(267, 22);
+            this.DocNumberText.Size = new System.Drawing.Size(309, 22);
             this.DocNumberText.TabIndex = 5;
             // 
             // NameText
             // 
             this.NameText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.NameText.Location = new System.Drawing.Point(1228, 347);
+            this.NameText.Location = new System.Drawing.Point(1207, 347);
             this.NameText.Name = "NameText";
-            this.NameText.Size = new System.Drawing.Size(267, 22);
+            this.NameText.Size = new System.Drawing.Size(309, 22);
             this.NameText.TabIndex = 6;
             // 
-            // textBox4
+            // RecognizedMainText
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(1228, 674);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(267, 22);
-            this.textBox4.TabIndex = 7;
+            this.RecognizedMainText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.RecognizedMainText.Location = new System.Drawing.Point(1207, 448);
+            this.RecognizedMainText.Multiline = true;
+            this.RecognizedMainText.Name = "RecognizedMainText";
+            this.RecognizedMainText.Size = new System.Drawing.Size(309, 116);
+            this.RecognizedMainText.TabIndex = 7;
             // 
             // ppText
             // 
             this.ppText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ppText.Location = new System.Drawing.Point(1228, 547);
+            this.ppText.Location = new System.Drawing.Point(1207, 592);
             this.ppText.Name = "ppText";
-            this.ppText.Size = new System.Drawing.Size(267, 22);
+            this.ppText.Size = new System.Drawing.Size(309, 22);
             this.ppText.TabIndex = 8;
             // 
             // DocNumberFullText
             // 
             this.DocNumberFullText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.DocNumberFullText.Location = new System.Drawing.Point(1228, 265);
+            this.DocNumberFullText.Location = new System.Drawing.Point(1207, 265);
             this.DocNumberFullText.Name = "DocNumberFullText";
-            this.DocNumberFullText.Size = new System.Drawing.Size(267, 22);
+            this.DocNumberFullText.Size = new System.Drawing.Size(309, 22);
             this.DocNumberFullText.TabIndex = 9;
             // 
             // Form1
@@ -156,11 +158,11 @@
             this.ClientSize = new System.Drawing.Size(1582, 626);
             this.Controls.Add(this.DocNumberFullText);
             this.Controls.Add(this.ppText);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.RecognizedMainText);
             this.Controls.Add(this.NameText);
             this.Controls.Add(this.DocNumberText);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonNext);
             this.Controls.Add(this.MainText);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
@@ -184,12 +186,12 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.Label MainText;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonNext;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox DocNumberText;
         private System.Windows.Forms.TextBox NameText;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox RecognizedMainText;
         private System.Windows.Forms.TextBox ppText;
         private System.Windows.Forms.TextBox DocNumberFullText;
     }

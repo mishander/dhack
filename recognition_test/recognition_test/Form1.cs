@@ -22,13 +22,25 @@ namespace recognition_test
 
         private string RegexTextSinglePattern(string text, string pattern)
         {
-            // Create a Regex  
+            // Create a Regex
             Regex rg = new Regex(pattern);
             MatchCollection matchedAuthors = rg.Matches(text);
             if (matchedAuthors.Count > 0)
                 return matchedAuthors[0].Value;
             else
                 return "";
+        }
+
+        private string RegexTextMultiplePattern(string text, string[] patterns)
+        {
+            foreach (string pattern in patterns)
+            {
+                Regex rg = new Regex(pattern);
+                MatchCollection matched = rg.Matches(text);
+                if (matched.Count > 0)
+                    return matched[0].Value;
+            }
+            return "";
         }
 
         private string[] name_patterns = { "КЛОПОТАННЯ", "КЛОПОТАННЯ про проведення кваліфікаційної експертизи на винахід"};

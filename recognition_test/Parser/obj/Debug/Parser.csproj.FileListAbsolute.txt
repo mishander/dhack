@@ -1,0 +1,6 @@
+D:\maniacDocs\dhack\recognition_test\Parser\bin\Debug\Parser.dll
+D:\maniacDocs\dhack\recognition_test\Parser\bin\Debug\Parser.pdb
+D:\maniacDocs\dhack\recognition_test\Parser\obj\Debug\Parser.csprojAssemblyReference.cache
+D:\maniacDocs\dhack\recognition_test\Parser\obj\Debug\Parser.csproj.CoreCompileInputs.cache
+D:\maniacDocs\dhack\recognition_test\Parser\obj\Debug\Parser.dll
+D:\maniacDocs\dhack\recognition_test\Parser\obj\Debug\Parser.pdb

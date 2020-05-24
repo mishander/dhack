@@ -12,6 +12,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Input;
+using Parser;
 
 namespace recognition_test
 {
@@ -20,49 +21,17 @@ namespace recognition_test
         [DllImport("User32.dll")]
         public static extern Int32 SetForegroundWindow(int hWnd);
 
-        private string RegexTextSinglePattern(string text, string pattern)
-        {
-            // Create a Regex
-            Regex rg = new Regex(pattern);
-            MatchCollection matchedAuthors = rg.Matches(text);
-            if (matchedAuthors.Count > 0)
-                return matchedAuthors[0].Value;
-            else
-                return "";
-        }
 
-        private string RegexTextMultiplePattern(string text, string[] patterns)
-        {
-            foreach (string pattern in patterns)
-            {
-                Regex rg = new Regex(pattern);
-                MatchCollection matched = rg.Matches(text);
-                if (matched.Count > 0)
-                    return matched[0].Value;
-            }
-            return "";
-        }
-
-        private string[] name_patterns = { "КЛОПОТАННЯ", "КЛОПОТАННЯ про проведення кваліфікаційної експертизи на винахід"};
-        private string doc_number = "Реєстраційний номер заявки";
         private string[] files;
         private int current_index = 0;
         private void RegexSearch(string line)
         {
-            foreach (string pattern in name_patterns)
-            {
-                if (line.Contains(pattern))
-                {
-                    this.NameText.Text = pattern;
-                    RecognizedMainText.Text = RegexTextSinglePattern(line, "(?<=" + pattern + ")[\\r\\n]+([^\\r\\n]+)");
-                }
-            }
-            //doc number regexp:
-            DocNumberText.Text = RegexTextSinglePattern(line, "а.?20\\d{1,3}.?\\d{0,5}");
-            //doc number line
-            DocNumberFullText.Text = RegexTextSinglePattern(line, "а.?20(?:(?!$).)*");
-            // who
-            ppText.Text = RegexTextSinglePattern(line, "Патентний повірений(?:(?!$).)*");
+            Dictionary<string, KeyValuePair<string, bool>> res = RegexParser.RegexSearch(line);
+            NameText.Text = res["NameText"].Key;
+            RecognizedMainText.Text = res["RecognizedMainText"].Key;
+            DocNumberText.Text = res["DocNumberText"].Key;
+            DocNumberFullText.Text = res["DocNumberFullText"].Key;
+            ppText.Text = res["ppText"].Key;
         }
         private void Open()
         {
@@ -85,6 +54,7 @@ namespace recognition_test
             current_index++;
             LoadFile(filename);
             buttonNext.Enabled = true;
+            buttonPrev.Enabled = true;
         }
         public Form1()
         {
@@ -139,17 +109,22 @@ namespace recognition_test
             Open();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-           LoadFile(files[current_index++]);
-        }
-
         private void Form1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
             if (e.KeyCode == Keys.Right)
             {
                 LoadFile(files[current_index++]);
             }
+        }
+
+        private void buttonPrev_Click(object sender, EventArgs e)
+        {
+            LoadFile(files[current_index--]);
+        }
+
+        private void buttonNext_Click(object sender, EventArgs e)
+        {
+            LoadFile(files[current_index++]);
         }
     }
 }

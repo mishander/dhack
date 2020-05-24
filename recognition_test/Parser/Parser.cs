@@ -10,7 +10,11 @@ namespace Parser
 {
     public static class RegexParser
     {
-        private static string[] name_patterns = { "КЛОПОТАННЯ", "ЗАЯВА" };
+        private static string[] namePatterns = { "КЛОПОТАННЯ", "ЗАЯВА" };
+        private static string docPattern = "а.?20\\d{1,3}.?\\d{0,5}";
+        private static string docDatePattern = "(?<=(а.?20\\d{1,3}.?\\d{0,5})).*";
+        private static string applicantPattern = "(?<=Заявник)(?:(?!$).)*";
+        private static string ppPattern = "Патентний повірений(?:(?!$).)*";
 
         private static string RegexTextSinglePattern(string text, string pattern)
         {
@@ -38,7 +42,7 @@ namespace Parser
         public static Dictionary<string, KeyValuePair<string, bool>> RegexSearch(string line)
         {
             Dictionary<string, KeyValuePair<string, bool>> res = new Dictionary<string, KeyValuePair<string, bool>>();
-            foreach (string pattern in name_patterns)
+            foreach (string pattern in namePatterns)
             {
                 if (line.Contains(pattern))
                 {
@@ -47,11 +51,13 @@ namespace Parser
                 }
             }
             //doc number regexp:
-            res.Add("DocNumberText", new KeyValuePair<string, bool>(RegexTextSinglePattern(line, "а.?20\\d{1,3}.?\\d{0,5}"), true));
+            res.Add("DocNumberText", new KeyValuePair<string, bool>(RegexTextSinglePattern(line, docPattern), true));
             //doc number line
-            res.Add("DocNumberFullText", new KeyValuePair<string, bool>(RegexTextSinglePattern(line, "а.?20(?:(?!$).)*"), true));
+            res.Add("DocNumberDate", new KeyValuePair<string, bool>(RegexTextSinglePattern(line, docDatePattern), true));
             // who
-            res.Add("ppText", new KeyValuePair<string, bool>(RegexTextSinglePattern(line, "Патентний повірений(?:(?!$).)*"), true));
+            res.Add("ppText", new KeyValuePair<string, bool>(RegexTextSinglePattern(line, ppPattern), true));
+            // applicant
+            res.Add("applicantText", new KeyValuePair<string, bool>(RegexTextSinglePattern(line, applicantPattern), true));
             return res;
         }
     }

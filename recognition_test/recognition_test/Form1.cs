@@ -21,18 +21,38 @@ namespace recognition_test
         [DllImport("User32.dll")]
         public static extern Int32 SetForegroundWindow(int hWnd);
 
-
         private string[] files;
         private int current_index = 0;
+
         private void RegexSearch(string line)
         {
             Dictionary<string, KeyValuePair<string, bool>> res = RegexParser.RegexSearch(line);
-            NameText.Text = res["NameText"].Key;
-            RecognizedMainText.Text = res["RecognizedMainText"].Key;
-            DocNumberText.Text = res["DocNumberText"].Key;
-            DocNumberFullText.Text = res["DocNumberFullText"].Key;
-            ppText.Text = res["ppText"].Key;
+            if (res.TryGetValue("NameText", out KeyValuePair<string, bool> nameText))
+            {
+                NameText.Text = nameText.Key;
+            }
+            if (res.TryGetValue("RecognizedMainText", out KeyValuePair<string, bool> mainText))
+            {
+                RecognizedMainText.Text = mainText.Key;
+            }
+            if (res.TryGetValue("DocNumberText", out KeyValuePair<string, bool> docNum))
+            {
+                DocNumberText.Text = docNum.Key;
+            }
+            if (res.TryGetValue("DocNumberDate", out KeyValuePair<string, bool> docDate))
+            {
+                DocNumberFullText.Text = docDate.Key;
+            }
+            if (res.TryGetValue("ppText", out KeyValuePair<string, bool> ppName))
+            {
+                ppText.Text = ppName.Key;
+            }
+            if (res.TryGetValue("applicantText", out KeyValuePair<string, bool> appName))
+            {
+                applicantText.Text = appName.Key;
+            }
         }
+
         private void Open()
         {
             using (var fbd = folderBrowserDialog1)
@@ -56,14 +76,6 @@ namespace recognition_test
             buttonNext.Enabled = true;
             buttonPrev.Enabled = true;
         }
-        public Form1()
-        {
-            InitializeComponent();
-            string line = MainText.Text;
-            RegexSearch(line);
-            //Open();
-            SetForegroundWindow(Handle.ToInt32());
-        }
 
         private void LoadFile(string filename)
         {
@@ -77,7 +89,7 @@ namespace recognition_test
             this.pictureBox1.Refresh();
             var proc = new Process();
             proc.StartInfo.FileName = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe";
-            proc.StartInfo.Arguments = "-l ukr " + filename + " " + filename;
+            proc.StartInfo.Arguments = "-l ukr+eng " + filename + " " + filename;
             proc.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             proc.Start();
             proc.WaitForExit();
@@ -104,6 +116,16 @@ namespace recognition_test
             //regex:
             RegexSearch(line);
         }
+
+        public Form1()
+        {
+            InitializeComponent();
+            string line = MainText.Text;
+            RegexSearch(line);
+            //Open();
+            SetForegroundWindow(Handle.ToInt32());
+        }
+
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Open();

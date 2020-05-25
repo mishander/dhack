@@ -4,3 +4,9 @@ D:\maniacDocs\dhack\recognition_test\Parser\obj\Debug\Parser.csprojAssemblyRefer
 D:\maniacDocs\dhack\recognition_test\Parser\obj\Debug\Parser.csproj.CoreCompileInputs.cache
 D:\maniacDocs\dhack\recognition_test\Parser\obj\Debug\Parser.dll
 D:\maniacDocs\dhack\recognition_test\Parser\obj\Debug\Parser.pdb
+C:\Liza_stuff\dhack\recognition_test\Parser\bin\Debug\Parser.dll
+C:\Liza_stuff\dhack\recognition_test\Parser\bin\Debug\Parser.pdb
+C:\Liza_stuff\dhack\recognition_test\Parser\obj\Debug\Parser.csprojAssemblyReference.cache
+C:\Liza_stuff\dhack\recognition_test\Parser\obj\Debug\Parser.csproj.CoreCompileInputs.cache
+C:\Liza_stuff\dhack\recognition_test\Parser\obj\Debug\Parser.dll
+C:\Liza_stuff\dhack\recognition_test\Parser\obj\Debug\Parser.pdb

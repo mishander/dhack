@@ -11,3 +11,16 @@ D:\maniacDocs\dhack\recognition_test\recognition_test\obj\Debug\recognition_test
 D:\maniacDocs\dhack\recognition_test\recognition_test\bin\Debug\Parser.dll
 D:\maniacDocs\dhack\recognition_test\recognition_test\bin\Debug\Parser.pdb
 D:\maniacDocs\dhack\recognition_test\recognition_test\obj\Debug\recognition_test.csproj.CopyComplete
+C:\Liza_stuff\dhack\recognition_test\recognition_test\bin\Debug\recognition_test.exe.config
+C:\Liza_stuff\dhack\recognition_test\recognition_test\bin\Debug\recognition_test.exe
+C:\Liza_stuff\dhack\recognition_test\recognition_test\bin\Debug\recognition_test.pdb
+C:\Liza_stuff\dhack\recognition_test\recognition_test\bin\Debug\Parser.dll
+C:\Liza_stuff\dhack\recognition_test\recognition_test\bin\Debug\Parser.pdb
+C:\Liza_stuff\dhack\recognition_test\recognition_test\obj\Debug\recognition_test.csprojAssemblyReference.cache
+C:\Liza_stuff\dhack\recognition_test\recognition_test\obj\Debug\recognition_test.Form1.resources
+C:\Liza_stuff\dhack\recognition_test\recognition_test\obj\Debug\recognition_test.Properties.Resources.resources
+C:\Liza_stuff\dhack\recognition_test\recognition_test\obj\Debug\recognition_test.csproj.GenerateResource.cache
+C:\Liza_stuff\dhack\recognition_test\recognition_test\obj\Debug\recognition_test.csproj.CoreCompileInputs.cache
+C:\Liza_stuff\dhack\recognition_test\recognition_test\obj\Debug\recognition_test.csproj.CopyComplete
+C:\Liza_stuff\dhack\recognition_test\recognition_test\obj\Debug\recognition_test.exe
+C:\Liza_stuff\dhack\recognition_test\recognition_test\obj\Debug\recognition_test.pdb

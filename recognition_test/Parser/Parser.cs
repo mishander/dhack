@@ -11,12 +11,13 @@ namespace Parser
     public static class RegexParser
     {
         private static string[] namePatterns = { "КЛОПОТАННЯ", "ЗАЯВА" };
-        private static string[] docPatterns = { "[aа].?20\\d{1,3}.?\\d{0,5}" };
-        private static string[] docDatePatterns = { "(?<=([aа].?20\\d{1,3}.?\\d{0,5})).*(\\d{2}\\.\\d{2}\\.\\d{4})" };
+        private static string[] docPatterns = { "[aаu].?20\\d{1,3}.?\\d{0,5}" };
+        private static string[] docDatePatterns = { "(?<=([aа].?20\\d{1,3}.?\\d{0,5})).*(\\d{2}\\.\\d{2}\\.\\d{4})", "\\(22\\)[\\s\\S]*?(?=\\n{2,})" };
         private static string[] applicantPatterns = { "(?<=Заявник)[\\s\\S]*?(?=(\\n{2,})|^Дата|^Номер)" };
-        private static string[] innumberPaterns = { "[PCTРСТ]{3}/\\S{2}\\d{4}/\\d{6}" };
-        private static string[] inDatePattern = { };
-        private static string[] inventionPatterns = { };
+        private static string[] innumberPaterns = { "[PCTРСТ]{3}/\\S{2}.?\\d{4}/\\d{6}" };
+        private static string[] inDatePattern = { "(?<=[PCTРСТ]{3}/\\S{2}.?\\d{4}/\\d{6}).*(\\d{2}\\.\\d{2}\\.\\d{4})" };
+        private static string[] inventionPatterns = { "(?<=[НП]азва винахо[дл]у\\(корисної моделі\\))\\n*.*\\n.*", "(?<=Назва винаходу)\\n*.*\\n.*" };
+        private static string[] docTextPatterns = { "(?<=КЛОПОТАННЯ\\n*)[Пп]ро[\\s\\S]*?(?=\\n{2,})" };
 
         private static string RegexTextSinglePattern(string text, string pattern)
         {
@@ -49,7 +50,7 @@ namespace Parser
                 if (line.Contains(pattern))
                 {
                     res.Add("NameText", new KeyValuePair<string, bool>(pattern, true));
-                    res.Add("RecognizedMainText", new KeyValuePair<string, bool>(RegexTextSinglePattern(line, "(?<=" + pattern + ")[\\r\\n]+([^\\r\\n]+)"), true));
+                    res.Add("RecognizedMainText", new KeyValuePair<string, bool>(RegexTextMultiplePattern(line, docTextPatterns), true));
                 }
             }
             //doc number regexp:

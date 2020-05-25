@@ -41,15 +41,23 @@ namespace recognition_test
             }
             if (res.TryGetValue("DocNumberDate", out KeyValuePair<string, bool> docDate))
             {
-                DocNumberFullText.Text = docDate.Key;
+                DocNumberDate.Text = docDate.Key;
             }
-            if (res.TryGetValue("ppText", out KeyValuePair<string, bool> ppName))
+            if (res.TryGetValue("ApplicantText", out KeyValuePair<string, bool> appName))
             {
-                ppText.Text = ppName.Key;
+                ApplicantText.Text = appName.Key;
             }
-            if (res.TryGetValue("applicantText", out KeyValuePair<string, bool> appName))
+            if (res.TryGetValue("INNumberText", out KeyValuePair<string, bool> intext))
             {
-                applicantText.Text = appName.Key;
+                INNumberText.Text = intext.Key;
+            }
+            if (res.TryGetValue("INNumberDate", out KeyValuePair<string, bool> indate))
+            {
+                INNumberDate.Text = indate.Key;
+            }
+            if (res.TryGetValue("InventionText", out KeyValuePair<string, bool> invention))
+            {
+                InventionText.Text = invention.Key;
             }
         }
 
@@ -80,11 +88,14 @@ namespace recognition_test
         private void LoadFile(string filename)
         {
             this.MainText.Text = "";
-            this.ppText.Clear();
-            this.DocNumberFullText.Clear();
+            this.ApplicantText.Clear();
+            this.DocNumberDate.Clear();
             this.DocNumberText.Clear();
             this.NameText.Clear();
             this.RecognizedMainText.Clear();
+            this.INNumberText.Clear();
+            this.INNumberDate.Clear();
+            this.InventionText.Clear();
             this.pictureBox1.Image = Image.FromFile(filename);
             this.pictureBox1.Refresh();
             var proc = new Process();
@@ -103,7 +114,7 @@ namespace recognition_test
                     // Read the stream to a string, and write the string to the console.
                     line = sr.ReadToEnd();
                     line = Regex.Replace(line, @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline);
-                    line = Regex.Replace(line, @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline);
+                    //line = Regex.Replace(line, @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline);
                     this.MainText.Text = line;
                 }
             }

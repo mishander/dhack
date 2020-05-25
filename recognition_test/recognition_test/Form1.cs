@@ -99,7 +99,8 @@ namespace recognition_test
             this.pictureBox1.Image = Image.FromFile(filename);
             this.pictureBox1.Refresh();
             var proc = new Process();
-            proc.StartInfo.FileName = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe";
+            proc.StartInfo.WorkingDirectory = Environment.CurrentDirectory;
+            proc.StartInfo.FileName = "..\\..\\..\\..\\Tesseract_bin\\tesseract.exe";
             proc.StartInfo.Arguments = "-l ukr+eng " + filename + " " + filename;
             proc.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             proc.Start();

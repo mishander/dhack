@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "recognition_test", "recognition_test\recognition_test.csproj", "{E6A04714-DC67-495A-B611-396BFD35E7DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E16CC935-E832-32D0-8603-C2E800734BB6} = {E16CC935-E832-32D0-8603-C2E800734BB6}
+		{45A8B487-5FF9-3775-99FC-1B60F50896D3} = {45A8B487-5FF9-3775-99FC-1B60F50896D3}
+		{21D052EC-CFD1-383B-9CBD-807721497C41} = {21D052EC-CFD1-383B-9CBD-807721497C41}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser\Parser.csproj", "{4DBC5387-A896-4B9D-864F-6BDC75B046D8}"
 EndProject
@@ -11,7 +16,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtesseract", "..\tesserac
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tesseract", "..\tesseract\vs16-x64\tesseract.vcxproj", "{E16CC935-E832-32D0-8603-C2E800734BB6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leptonica", "..\leptonica\vs16-x64\src\leptonica.vcxproj", "{2BE16A31-EDF4-3DD0-B3C4-6EE8F124ADE9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leptonica", "..\leptonica\vs16-x64\src\leptonica.vcxproj", "{21D052EC-CFD1-383B-9CBD-807721497C41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,18 +86,18 @@ Global
 		{E16CC935-E832-32D0-8603-C2E800734BB6}.RelWithDebInfo|Any CPU.ActiveCfg = RelWithDebInfo|x64
 		{E16CC935-E832-32D0-8603-C2E800734BB6}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
 		{E16CC935-E832-32D0-8603-C2E800734BB6}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
-		{2BE16A31-EDF4-3DD0-B3C4-6EE8F124ADE9}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{2BE16A31-EDF4-3DD0-B3C4-6EE8F124ADE9}.Debug|x64.ActiveCfg = Debug|x64
-		{2BE16A31-EDF4-3DD0-B3C4-6EE8F124ADE9}.Debug|x64.Build.0 = Debug|x64
-		{2BE16A31-EDF4-3DD0-B3C4-6EE8F124ADE9}.MinSizeRel|Any CPU.ActiveCfg = MinSizeRel|x64
-		{2BE16A31-EDF4-3DD0-B3C4-6EE8F124ADE9}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
-		{2BE16A31-EDF4-3DD0-B3C4-6EE8F124ADE9}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
-		{2BE16A31-EDF4-3DD0-B3C4-6EE8F124ADE9}.Release|Any CPU.ActiveCfg = Release|x64
-		{2BE16A31-EDF4-3DD0-B3C4-6EE8F124ADE9}.Release|x64.ActiveCfg = Release|x64
-		{2BE16A31-EDF4-3DD0-B3C4-6EE8F124ADE9}.Release|x64.Build.0 = Release|x64
-		{2BE16A31-EDF4-3DD0-B3C4-6EE8F124ADE9}.RelWithDebInfo|Any CPU.ActiveCfg = RelWithDebInfo|x64
-		{2BE16A31-EDF4-3DD0-B3C4-6EE8F124ADE9}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
-		{2BE16A31-EDF4-3DD0-B3C4-6EE8F124ADE9}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+		{21D052EC-CFD1-383B-9CBD-807721497C41}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{21D052EC-CFD1-383B-9CBD-807721497C41}.Debug|x64.ActiveCfg = Debug|x64
+		{21D052EC-CFD1-383B-9CBD-807721497C41}.Debug|x64.Build.0 = Debug|x64
+		{21D052EC-CFD1-383B-9CBD-807721497C41}.MinSizeRel|Any CPU.ActiveCfg = MinSizeRel|x64
+		{21D052EC-CFD1-383B-9CBD-807721497C41}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{21D052EC-CFD1-383B-9CBD-807721497C41}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{21D052EC-CFD1-383B-9CBD-807721497C41}.Release|Any CPU.ActiveCfg = Release|x64
+		{21D052EC-CFD1-383B-9CBD-807721497C41}.Release|x64.ActiveCfg = Release|x64
+		{21D052EC-CFD1-383B-9CBD-807721497C41}.Release|x64.Build.0 = Release|x64
+		{21D052EC-CFD1-383B-9CBD-807721497C41}.RelWithDebInfo|Any CPU.ActiveCfg = RelWithDebInfo|x64
+		{21D052EC-CFD1-383B-9CBD-807721497C41}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{21D052EC-CFD1-383B-9CBD-807721497C41}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

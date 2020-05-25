@@ -1,648 +1,648 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\adaptmap.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\adaptmap.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\affine.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\affine.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\affinecompose.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\affinecompose.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\arrayaccess.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\arrayaccess.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\bardecode.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\bardecode.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\baseline.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\baseline.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\bbuffer.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\bbuffer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\bilateral.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\bilateral.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\bilinear.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\bilinear.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\binarize.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\binarize.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\binexpand.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\binexpand.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\binreduce.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\binreduce.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\blend.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\blend.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\bmf.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\bmf.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\bmpio.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\bmpio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\bmpiostub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\bmpiostub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\bootnumgen1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\bootnumgen1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\bootnumgen2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\bootnumgen2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\bootnumgen3.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\bootnumgen3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\bootnumgen4.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\bootnumgen4.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\boxbasic.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\boxbasic.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\boxfunc1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\boxfunc1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\boxfunc2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\boxfunc2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\boxfunc3.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\boxfunc3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\boxfunc4.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\boxfunc4.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\boxfunc5.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\boxfunc5.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\bytearray.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\bytearray.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\ccbord.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\ccbord.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\ccthin.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\ccthin.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\checkerboard.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\checkerboard.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\classapp.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\classapp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\colorcontent.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\colorcontent.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\colorfill.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\colorfill.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\coloring.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\coloring.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\colormap.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\colormap.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\colormorph.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\colormorph.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\colorquant1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\colorquant1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\colorquant2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\colorquant2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\colorseg.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\colorseg.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\colorspace.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\colorspace.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\compare.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\compare.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\conncomp.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\conncomp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\convertfiles.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\convertfiles.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\convolve.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\convolve.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\correlscore.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\correlscore.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\dewarp1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\dewarp1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\dewarp2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\dewarp2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\dewarp3.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\dewarp3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\dewarp4.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\dewarp4.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\dnabasic.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\dnabasic.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\dnafunc1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\dnafunc1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\dnahash.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\dnahash.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\dwacomb.2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\dwacomb.2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\dwacomblow.2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\dwacomblow.2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\edge.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\edge.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\encoding.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\encoding.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\enhance.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\enhance.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\fhmtauto.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\fhmtauto.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\fhmtgen.1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\fhmtgen.1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\fhmtgenlow.1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\fhmtgenlow.1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\finditalic.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\finditalic.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\flipdetect.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\flipdetect.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\fliphmtgen.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\fliphmtgen.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\fmorphauto.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\fmorphauto.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\fmorphgen.1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\fmorphgen.1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\fmorphgenlow.1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\fmorphgenlow.1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\fpix1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\fpix1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\fpix2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\fpix2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\gifio.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\gifio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\gifiostub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\gifiostub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\gplot.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\gplot.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\graphics.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\graphics.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\graymorph.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\graymorph.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\grayquant.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\grayquant.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\heap.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\heap.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\jbclass.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\jbclass.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\jp2kheader.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\jp2kheader.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\jp2kheaderstub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\jp2kheaderstub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\jp2kio.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\jp2kio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\jp2kiostub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\jp2kiostub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\jpegio.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\jpegio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\jpegiostub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\jpegiostub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\kernel.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\kernel.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\leptwin.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\leptwin.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\libversions.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\libversions.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\list.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\list.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\map.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\map.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\maze.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\maze.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\morph.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\morph.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\morphapp.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\morphapp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\morphdwa.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\morphdwa.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\morphseq.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\morphseq.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\numabasic.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\numabasic.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\numafunc1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\numafunc1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\numafunc2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\numafunc2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pageseg.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pageseg.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\paintcmap.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\paintcmap.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\parseprotos.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\parseprotos.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\partify.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\partify.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\partition.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\partition.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pdfio1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pdfio1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pdfio1stub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pdfio1stub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pdfio2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pdfio2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pdfio2stub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pdfio2stub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pix1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pix1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pix2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pix2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pix3.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pix3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pix4.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pix4.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pix5.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pix5.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pixabasic.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pixabasic.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pixacc.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pixacc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pixafunc1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pixafunc1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pixafunc2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pixafunc2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pixalloc.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pixalloc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pixarith.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pixarith.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pixcomp.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pixcomp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pixconv.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pixconv.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pixlabel.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pixlabel.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pixtiling.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pixtiling.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pngio.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pngio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pngiostub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pngiostub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pnmio.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pnmio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\pnmiostub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\pnmiostub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\projective.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\projective.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\psio1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\psio1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\psio1stub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\psio1stub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\psio2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\psio2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\psio2stub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\psio2stub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\ptabasic.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\ptabasic.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\ptafunc1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\ptafunc1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\ptafunc2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\ptafunc2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\ptra.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\ptra.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\quadtree.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\quadtree.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\queue.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\queue.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\rank.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\rank.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\rbtree.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\rbtree.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\readbarcode.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\readbarcode.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\readfile.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\readfile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\recogbasic.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\recogbasic.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\recogdid.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\recogdid.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\recogident.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\recogident.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\recogtrain.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\recogtrain.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\regutils.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\regutils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\rop.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\rop.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\roplow.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\roplow.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\rotate.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\rotate.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\rotateam.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\rotateam.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\rotateorth.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\rotateorth.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\rotateshear.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\rotateshear.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\runlength.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\runlength.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\sarray1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\sarray1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\sarray2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\sarray2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\scale1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\scale1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\scale2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\scale2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\seedfill.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\seedfill.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\sel1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\sel1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\sel2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\sel2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\selgen.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\selgen.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\shear.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\shear.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\skew.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\skew.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\spixio.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\spixio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\stack.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\stack.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\stringcode.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\stringcode.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\strokes.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\strokes.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\sudoku.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\sudoku.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\textops.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\textops.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\tiffio.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\tiffio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\tiffiostub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\tiffiostub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\utils1.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\utils1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\utils2.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\utils2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\warper.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\warper.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\watershed.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\watershed.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\webpanimio.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\webpanimio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\webpanimiostub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\webpanimiostub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\webpio.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\webpio.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\webpiostub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\webpiostub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\writefile.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\writefile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\zlibmem.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\zlibmem.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Liza_stuff\leptonica\src\zlibmemstub.c">
+    <ClCompile Include="C:\Liza_stuff\dhack\leptonica\src\zlibmemstub.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\allheaders.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\allheaders.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\alltypes.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\alltypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\array.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\array.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\arrayaccess.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\arrayaccess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\bbuffer.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\bbuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\bilateral.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\bilateral.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\bmf.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\bmf.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\bmfdata.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\bmfdata.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\bmp.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\bmp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\ccbord.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\ccbord.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\colorfill.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\colorfill.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\dewarp.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\dewarp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\environ.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\environ.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\gplot.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\gplot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\heap.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\heap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\imageio.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\imageio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\jbclass.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\jbclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\leptwin.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\leptwin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\list.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\list.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\morph.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\morph.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\pix.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\pix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\ptra.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\ptra.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\queue.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\queue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\rbtree.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\rbtree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\readbarcode.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\readbarcode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\recog.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\recog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\regutils.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\regutils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\stack.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\stack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\stringcode.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\stringcode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\sudoku.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\sudoku.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Liza_stuff\leptonica\src\watershed.h">
+    <ClInclude Include="C:\Liza_stuff\dhack\leptonica\src\watershed.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Liza_stuff\leptonica\src\CMakeLists.txt" />
+    <CustomBuild Include="C:\Liza_stuff\dhack\leptonica\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{0B650C40-AAD7-35F9-9FB4-75AF2F09C769}</UniqueIdentifier>
+      <UniqueIdentifier>{A800D444-3FAF-3D20-A611-8D81745EAD51}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{A51F53CF-63B4-3564-BACE-8FE027065D04}</UniqueIdentifier>
+      <UniqueIdentifier>{891C79FD-DEF8-3442-BBF5-4AAE6915FAAD}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

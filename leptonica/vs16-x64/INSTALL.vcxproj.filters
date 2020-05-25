@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Liza_stuff\leptonica\vs16-x64\CMakeFiles\d21436f3bb659b7a28cecfdb84f241d0\INSTALL_force.rule">
+    <CustomBuild Include="C:\Liza_stuff\dhack\leptonica\vs16-x64\CMakeFiles\07ce857ed9eaed57ac75b5dd32caf7eb\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{133D3A56-AA76-3C57-B731-3A115556918C}</UniqueIdentifier>
+      <UniqueIdentifier>{14D972CB-3250-3DDA-8DA7-3D2136E1CAE8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

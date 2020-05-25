@@ -36,7 +36,7 @@ SET(Leptonica_VERSION_PATCH     0)
 # ======================================================
 
 # Provide the include directories to the caller
-set(Leptonica_INCLUDE_DIRS      "C:/Liza_stuff/build/x64/include;C:/Liza_stuff/build/x64/include/leptonica")
+set(Leptonica_INCLUDE_DIRS      "C:/Liza_stuff/dhack/build/x64/include;C:/Liza_stuff/dhack/build/x64/include/leptonica")
 
 # ====================================================================
 # Link libraries:

@@ -1,9 +1,9 @@
 # https://gitlab.kitware.com/cmake/community/wikis/FAQ#can-i-do-make-uninstall-with-cmake
-if(NOT EXISTS "C:/Liza_stuff/leptonica/vs16-x64/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: C:/Liza_stuff/leptonica/vs16-x64/install_manifest.txt")
-endif(NOT EXISTS "C:/Liza_stuff/leptonica/vs16-x64/install_manifest.txt")
+if(NOT EXISTS "C:/Liza_stuff/dhack/leptonica/vs16-x64/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: C:/Liza_stuff/dhack/leptonica/vs16-x64/install_manifest.txt")
+endif(NOT EXISTS "C:/Liza_stuff/dhack/leptonica/vs16-x64/install_manifest.txt")
 
-file(READ "C:/Liza_stuff/leptonica/vs16-x64/install_manifest.txt" files)
+file(READ "C:/Liza_stuff/dhack/leptonica/vs16-x64/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
   message(STATUS "Uninstalling $ENV{DESTDIR}${file}")

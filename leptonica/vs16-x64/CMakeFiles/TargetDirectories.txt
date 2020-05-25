@@ -1,6 +1,6 @@
-C:/Liza_stuff/leptonica/vs16-x64/CMakeFiles/uninstall.dir
-C:/Liza_stuff/leptonica/vs16-x64/CMakeFiles/INSTALL.dir
-C:/Liza_stuff/leptonica/vs16-x64/CMakeFiles/ALL_BUILD.dir
-C:/Liza_stuff/leptonica/vs16-x64/CMakeFiles/ZERO_CHECK.dir
-C:/Liza_stuff/leptonica/vs16-x64/src/CMakeFiles/leptonica.dir
-C:/Liza_stuff/leptonica/vs16-x64/src/CMakeFiles/INSTALL.dir
+C:/Liza_stuff/dhack/leptonica/vs16-x64/CMakeFiles/uninstall.dir
+C:/Liza_stuff/dhack/leptonica/vs16-x64/CMakeFiles/INSTALL.dir
+C:/Liza_stuff/dhack/leptonica/vs16-x64/CMakeFiles/ALL_BUILD.dir
+C:/Liza_stuff/dhack/leptonica/vs16-x64/CMakeFiles/ZERO_CHECK.dir
+C:/Liza_stuff/dhack/leptonica/vs16-x64/src/CMakeFiles/leptonica.dir
+C:/Liza_stuff/dhack/leptonica/vs16-x64/src/CMakeFiles/INSTALL.dir

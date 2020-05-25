@@ -48,28 +48,28 @@ add_library(leptonica STATIC IMPORTED)
 set_property(TARGET leptonica APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(leptonica PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
-  IMPORTED_LOCATION_DEBUG "C:/Liza_stuff/leptonica/vs16-x64/src/Debug/leptonica-1.80.0d.lib"
+  IMPORTED_LOCATION_DEBUG "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/Debug/leptonica-1.80.0d.lib"
   )
 
 # Import target "leptonica" for configuration "Release"
 set_property(TARGET leptonica APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(leptonica PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "C:/Liza_stuff/leptonica/vs16-x64/src/Release/leptonica-1.80.0.lib"
+  IMPORTED_LOCATION_RELEASE "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/Release/leptonica-1.80.0.lib"
   )
 
 # Import target "leptonica" for configuration "MinSizeRel"
 set_property(TARGET leptonica APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(leptonica PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_MINSIZEREL "CXX"
-  IMPORTED_LOCATION_MINSIZEREL "C:/Liza_stuff/leptonica/vs16-x64/src/MinSizeRel/leptonica-1.80.0.lib"
+  IMPORTED_LOCATION_MINSIZEREL "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/MinSizeRel/leptonica-1.80.0.lib"
   )
 
 # Import target "leptonica" for configuration "RelWithDebInfo"
 set_property(TARGET leptonica APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
 set_target_properties(leptonica PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELWITHDEBINFO "CXX"
-  IMPORTED_LOCATION_RELWITHDEBINFO "C:/Liza_stuff/leptonica/vs16-x64/src/RelWithDebInfo/leptonica-1.80.0.lib"
+  IMPORTED_LOCATION_RELWITHDEBINFO "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/RelWithDebInfo/leptonica-1.80.0.lib"
   )
 
 # This file does not depend on other imported targets which have

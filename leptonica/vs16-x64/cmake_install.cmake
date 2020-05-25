@@ -1,8 +1,8 @@
-# Install script for directory: C:/Liza_stuff/leptonica
+# Install script for directory: C:/Liza_stuff/dhack/leptonica
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Liza_stuff/build/x64")
+  set(CMAKE_INSTALL_PREFIX "C:/Liza_stuff/dhack/build/x64")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,19 +33,19 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Liza_stuff/leptonica/vs16-x64/lept.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Liza_stuff/dhack/leptonica/vs16-x64/lept.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cmake" TYPE FILE FILES
-    "C:/Liza_stuff/leptonica/vs16-x64/LeptonicaConfig.cmake"
-    "C:/Liza_stuff/leptonica/vs16-x64/LeptonicaConfig-version.cmake"
+    "C:/Liza_stuff/dhack/leptonica/vs16-x64/LeptonicaConfig.cmake"
+    "C:/Liza_stuff/dhack/leptonica/vs16-x64/LeptonicaConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Liza_stuff/leptonica/vs16-x64/src/cmake_install.cmake")
+  include("C:/Liza_stuff/dhack/leptonica/vs16-x64/src/cmake_install.cmake")
 
 endif()
 
@@ -57,5 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Liza_stuff/leptonica/vs16-x64/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Liza_stuff/dhack/leptonica/vs16-x64/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,8 +1,8 @@
-# Install script for directory: C:/Liza_stuff/leptonica/src
+# Install script for directory: C:/Liza_stuff/dhack/leptonica/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Liza_stuff/build/x64")
+  set(CMAKE_INSTALL_PREFIX "C:/Liza_stuff/dhack/build/x64")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,13 +34,13 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Liza_stuff/leptonica/vs16-x64/src/Debug/leptonica-1.80.0d.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/Debug/leptonica-1.80.0d.lib")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Liza_stuff/leptonica/vs16-x64/src/Release/leptonica-1.80.0.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/Release/leptonica-1.80.0.lib")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Liza_stuff/leptonica/vs16-x64/src/MinSizeRel/leptonica-1.80.0.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/MinSizeRel/leptonica-1.80.0.lib")
   elseif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Liza_stuff/leptonica/vs16-x64/src/RelWithDebInfo/leptonica-1.80.0.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/RelWithDebInfo/leptonica-1.80.0.lib")
   endif()
 endif()
 
@@ -48,7 +48,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cmake/LeptonicaTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cmake/LeptonicaTargets.cmake"
-         "C:/Liza_stuff/leptonica/vs16-x64/src/CMakeFiles/Export/cmake/LeptonicaTargets.cmake")
+         "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/CMakeFiles/Export/cmake/LeptonicaTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/cmake/LeptonicaTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -57,55 +57,55 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cmake" TYPE FILE FILES "C:/Liza_stuff/leptonica/vs16-x64/src/CMakeFiles/Export/cmake/LeptonicaTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cmake" TYPE FILE FILES "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/CMakeFiles/Export/cmake/LeptonicaTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cmake" TYPE FILE FILES "C:/Liza_stuff/leptonica/vs16-x64/src/CMakeFiles/Export/cmake/LeptonicaTargets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cmake" TYPE FILE FILES "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/CMakeFiles/Export/cmake/LeptonicaTargets-debug.cmake")
   endif()
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cmake" TYPE FILE FILES "C:/Liza_stuff/leptonica/vs16-x64/src/CMakeFiles/Export/cmake/LeptonicaTargets-minsizerel.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cmake" TYPE FILE FILES "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/CMakeFiles/Export/cmake/LeptonicaTargets-minsizerel.cmake")
   endif()
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cmake" TYPE FILE FILES "C:/Liza_stuff/leptonica/vs16-x64/src/CMakeFiles/Export/cmake/LeptonicaTargets-relwithdebinfo.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cmake" TYPE FILE FILES "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/CMakeFiles/Export/cmake/LeptonicaTargets-relwithdebinfo.cmake")
   endif()
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cmake" TYPE FILE FILES "C:/Liza_stuff/leptonica/vs16-x64/src/CMakeFiles/Export/cmake/LeptonicaTargets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/cmake" TYPE FILE FILES "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/CMakeFiles/Export/cmake/LeptonicaTargets-release.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/leptonica" TYPE FILE FILES
-    "C:/Liza_stuff/leptonica/src/allheaders.h"
-    "C:/Liza_stuff/leptonica/src/alltypes.h"
-    "C:/Liza_stuff/leptonica/src/array.h"
-    "C:/Liza_stuff/leptonica/src/arrayaccess.h"
-    "C:/Liza_stuff/leptonica/src/bbuffer.h"
-    "C:/Liza_stuff/leptonica/src/bilateral.h"
-    "C:/Liza_stuff/leptonica/src/bmf.h"
-    "C:/Liza_stuff/leptonica/src/bmfdata.h"
-    "C:/Liza_stuff/leptonica/src/bmp.h"
-    "C:/Liza_stuff/leptonica/src/ccbord.h"
-    "C:/Liza_stuff/leptonica/src/colorfill.h"
-    "C:/Liza_stuff/leptonica/src/dewarp.h"
-    "C:/Liza_stuff/leptonica/src/environ.h"
-    "C:/Liza_stuff/leptonica/src/gplot.h"
-    "C:/Liza_stuff/leptonica/src/heap.h"
-    "C:/Liza_stuff/leptonica/src/imageio.h"
-    "C:/Liza_stuff/leptonica/src/jbclass.h"
-    "C:/Liza_stuff/leptonica/src/leptwin.h"
-    "C:/Liza_stuff/leptonica/src/list.h"
-    "C:/Liza_stuff/leptonica/src/morph.h"
-    "C:/Liza_stuff/leptonica/src/pix.h"
-    "C:/Liza_stuff/leptonica/src/ptra.h"
-    "C:/Liza_stuff/leptonica/src/queue.h"
-    "C:/Liza_stuff/leptonica/src/rbtree.h"
-    "C:/Liza_stuff/leptonica/src/readbarcode.h"
-    "C:/Liza_stuff/leptonica/src/recog.h"
-    "C:/Liza_stuff/leptonica/src/regutils.h"
-    "C:/Liza_stuff/leptonica/src/stack.h"
-    "C:/Liza_stuff/leptonica/src/stringcode.h"
-    "C:/Liza_stuff/leptonica/src/sudoku.h"
-    "C:/Liza_stuff/leptonica/src/watershed.h"
-    "C:/Liza_stuff/leptonica/vs16-x64/src/endianness.h"
+    "C:/Liza_stuff/dhack/leptonica/src/allheaders.h"
+    "C:/Liza_stuff/dhack/leptonica/src/alltypes.h"
+    "C:/Liza_stuff/dhack/leptonica/src/array.h"
+    "C:/Liza_stuff/dhack/leptonica/src/arrayaccess.h"
+    "C:/Liza_stuff/dhack/leptonica/src/bbuffer.h"
+    "C:/Liza_stuff/dhack/leptonica/src/bilateral.h"
+    "C:/Liza_stuff/dhack/leptonica/src/bmf.h"
+    "C:/Liza_stuff/dhack/leptonica/src/bmfdata.h"
+    "C:/Liza_stuff/dhack/leptonica/src/bmp.h"
+    "C:/Liza_stuff/dhack/leptonica/src/ccbord.h"
+    "C:/Liza_stuff/dhack/leptonica/src/colorfill.h"
+    "C:/Liza_stuff/dhack/leptonica/src/dewarp.h"
+    "C:/Liza_stuff/dhack/leptonica/src/environ.h"
+    "C:/Liza_stuff/dhack/leptonica/src/gplot.h"
+    "C:/Liza_stuff/dhack/leptonica/src/heap.h"
+    "C:/Liza_stuff/dhack/leptonica/src/imageio.h"
+    "C:/Liza_stuff/dhack/leptonica/src/jbclass.h"
+    "C:/Liza_stuff/dhack/leptonica/src/leptwin.h"
+    "C:/Liza_stuff/dhack/leptonica/src/list.h"
+    "C:/Liza_stuff/dhack/leptonica/src/morph.h"
+    "C:/Liza_stuff/dhack/leptonica/src/pix.h"
+    "C:/Liza_stuff/dhack/leptonica/src/ptra.h"
+    "C:/Liza_stuff/dhack/leptonica/src/queue.h"
+    "C:/Liza_stuff/dhack/leptonica/src/rbtree.h"
+    "C:/Liza_stuff/dhack/leptonica/src/readbarcode.h"
+    "C:/Liza_stuff/dhack/leptonica/src/recog.h"
+    "C:/Liza_stuff/dhack/leptonica/src/regutils.h"
+    "C:/Liza_stuff/dhack/leptonica/src/stack.h"
+    "C:/Liza_stuff/dhack/leptonica/src/stringcode.h"
+    "C:/Liza_stuff/dhack/leptonica/src/sudoku.h"
+    "C:/Liza_stuff/dhack/leptonica/src/watershed.h"
+    "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/endianness.h"
     )
 endif()
 

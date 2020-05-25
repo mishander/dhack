@@ -1,6 +1,6 @@
-^C:\LIZA_STUFF\LEPTONICA\VS16-X64\CMAKEFILES\D21436F3BB659B7A28CECFDB84F241D0\GENERATE.STAMP.RULE
+^C:\LIZA_STUFF\DHACK\LEPTONICA\VS16-X64\CMAKEFILES\07CE857ED9EAED57AC75B5DD32CAF7EB\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Liza_stuff/leptonica -BC:/Liza_stuff/leptonica/vs16-x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Liza_stuff/leptonica/vs16-x64/leptonica.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Liza_stuff/dhack/leptonica -BC:/Liza_stuff/dhack/leptonica/vs16-x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Liza_stuff/dhack/leptonica/vs16-x64/leptonica.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

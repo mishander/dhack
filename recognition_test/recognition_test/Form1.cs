@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Input;
 using Parser;
+using recognition_test.Properties;
 
 namespace recognition_test
 {
@@ -23,7 +24,7 @@ namespace recognition_test
 
         private string[] files;
         private int current_index = 0;
-
+        private static HashSet<string> hash = new HashSet<string>(Resources.words.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries));
         private void RegexSearch(string line)
         {
             Dictionary<string, KeyValuePair<string, bool>> res = RegexParser.RegexSearch(line);
@@ -89,6 +90,7 @@ namespace recognition_test
         {
             this.MainText.Text = "";
             this.ApplicantText.Clear();
+            this.wrongText.Clear();
             this.DocNumberDate.Clear();
             this.DocNumberText.Clear();
             this.NameText.Clear();
@@ -127,11 +129,32 @@ namespace recognition_test
 
             //regex:
             RegexSearch(line);
+            //dict search
+            string str = "";
+            foreach (Control x in this.Controls)
+            {
+                if ((x is TextBox) && (((TextBox)x).Text != ""))
+                {
+                    string ss = "";
+                    foreach (string s in ((TextBox)x).Text.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries))
+                    {
+                        //remove all punctuation + tolower
+                        string s_stripped = new string(s.Where(c => !char.IsPunctuation(c)).ToArray()).ToLower(); ;
+                        if (!hash.Contains(s_stripped))
+                        {
+                            ss += s + " ";
+                        }
+                    }
+                    if (ss.Length != 0)
+                        str += ss + Environment.NewLine;
+                }
+            }
+            wrongText.Text = str;
         }
 
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();       
             string line = MainText.Text;
             RegexSearch(line);
             //Open();

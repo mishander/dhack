@@ -90,7 +90,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\words.txt" />
-    <Content Include="words.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -50,6 +50,7 @@ C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake
 C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake
 C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeParseImplicitIncludeInfo.cmake
 C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeParseImplicitLinkInfo.cmake
+C:/Program Files/CMake/share/cmake-3.17/Modules/CMakePushCheckState.cmake
 C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeRCCompiler.cmake.in
 C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeRCInformation.cmake
 C:/Program Files/CMake/share/cmake-3.17/Modules/CMakeSystem.cmake.in
@@ -142,3 +143,10 @@ C:/Program Files/CMake/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake
 C:/Program Files/CMake/share/cmake-3.17/Modules/SelectLibraryConfigurations.cmake
 C:/Program Files/CMake/share/cmake-3.17/Modules/TestBigEndian.cmake
 C:/Program Files/CMake/share/cmake-3.17/Modules/TestEndianess.c.in
+C:/vcpkg/installed/x64-windows-static/share/jpeg/vcpkg-cmake-wrapper.cmake
+C:/vcpkg/installed/x64-windows-static/share/liblzma/LibLZMAConfig-debug.cmake
+C:/vcpkg/installed/x64-windows-static/share/liblzma/LibLZMAConfig-release.cmake
+C:/vcpkg/installed/x64-windows-static/share/liblzma/LibLZMAConfig.cmake
+C:/vcpkg/installed/x64-windows-static/share/liblzma/vcpkg-cmake-wrapper.cmake
+C:/vcpkg/installed/x64-windows-static/share/tiff/vcpkg-cmake-wrapper.cmake
+C:/vcpkg/scripts/buildsystems/vcpkg.cmake

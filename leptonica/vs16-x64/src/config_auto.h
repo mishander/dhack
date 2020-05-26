@@ -48,19 +48,19 @@
 
 
 /* Define to 1 if you have giflib. */
-/* #undef HAVE_LIBGIF */
+#define HAVE_LIBGIF 1
 
 /* Define to 1 if you have libopenjp2. */
 /* #undef HAVE_LIBJP2K */
 
 /* Define to 1 if you have jpeg. */
-/* #undef HAVE_LIBJPEG */
+#define HAVE_LIBJPEG 1
 
 /* Define to 1 if you have libpng. */
-/* #undef HAVE_LIBPNG */
+#define HAVE_LIBPNG 1
 
 /* Define to 1 if you have libtiff. */
-/* #undef HAVE_LIBTIFF */
+#define HAVE_LIBTIFF 1
 
 /* Define to 1 if you have libwebp. */
 /* #undef HAVE_LIBWEBP */
@@ -69,7 +69,7 @@
 /* #undef HAVE_LIBWEBP_ANIM */
 
 /* Define to 1 if you have zlib. */
-/* #undef HAVE_LIBZ */
+#define HAVE_LIBZ 1
 
 #ifdef HAVE_OPENJPEG_2_0_OPENJPEG_H
 #define LIBJP2K_HEADER <openjpeg-2.0/openjpeg.h>

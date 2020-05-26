@@ -44,10 +44,15 @@ unset(_expectedTargets)
 # Create imported target leptonica
 add_library(leptonica STATIC IMPORTED)
 
+set_target_properties(leptonica PROPERTIES
+  INTERFACE_INCLUDE_DIRECTORIES "C:/vcpkg/installed/x64-windows-static/include;C:/vcpkg/installed/x64-windows-static/include;C:/vcpkg/installed/x64-windows-static/include;C:/vcpkg/installed/x64-windows-static/include;C:/vcpkg/installed/x64-windows-static/include;C:/vcpkg/installed/x64-windows-static/include"
+)
+
 # Import target "leptonica" for configuration "Debug"
 set_property(TARGET leptonica APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(leptonica PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_DEBUG "C:/vcpkg/installed/x64-windows-static/debug/lib/gif.lib;C:/vcpkg/installed/x64-windows-static/debug/lib/jpegd.lib;C:/vcpkg/installed/x64-windows-static/debug/lib/libpng16d.lib;C:/vcpkg/installed/x64-windows-static/debug/lib/zlibd.lib;C:/vcpkg/installed/x64-windows-static/debug/lib/tiffd.lib;C:/vcpkg/installed/x64-windows-static/debug/lib/lzmad.lib;C:/vcpkg/installed/x64-windows-static/debug/lib/jpegd.lib;C:/vcpkg/installed/x64-windows-static/debug/lib/zlibd.lib;C:/vcpkg/installed/x64-windows-static/debug/lib/zlibd.lib"
   IMPORTED_LOCATION_DEBUG "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/Debug/leptonica-1.80.0d.lib"
   )
 
@@ -55,6 +60,7 @@ set_target_properties(leptonica PROPERTIES
 set_property(TARGET leptonica APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(leptonica PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "C:/vcpkg/installed/x64-windows-static/debug/lib/gif.lib;C:/vcpkg/installed/x64-windows-static/lib/jpeg.lib;C:/vcpkg/installed/x64-windows-static/lib/libpng16.lib;C:/vcpkg/installed/x64-windows-static/lib/zlib.lib;C:/vcpkg/installed/x64-windows-static/lib/tiff.lib;C:/vcpkg/installed/x64-windows-static/lib/lzma.lib;C:/vcpkg/installed/x64-windows-static/lib/jpeg.lib;C:/vcpkg/installed/x64-windows-static/lib/zlib.lib;C:/vcpkg/installed/x64-windows-static/lib/zlib.lib"
   IMPORTED_LOCATION_RELEASE "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/Release/leptonica-1.80.0.lib"
   )
 
@@ -62,6 +68,7 @@ set_target_properties(leptonica PROPERTIES
 set_property(TARGET leptonica APPEND PROPERTY IMPORTED_CONFIGURATIONS MINSIZEREL)
 set_target_properties(leptonica PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_MINSIZEREL "CXX"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_MINSIZEREL "C:/vcpkg/installed/x64-windows-static/debug/lib/gif.lib;C:/vcpkg/installed/x64-windows-static/lib/jpeg.lib;C:/vcpkg/installed/x64-windows-static/lib/libpng16.lib;C:/vcpkg/installed/x64-windows-static/lib/zlib.lib;C:/vcpkg/installed/x64-windows-static/lib/tiff.lib;C:/vcpkg/installed/x64-windows-static/lib/lzma.lib;C:/vcpkg/installed/x64-windows-static/lib/jpeg.lib;C:/vcpkg/installed/x64-windows-static/lib/zlib.lib;C:/vcpkg/installed/x64-windows-static/lib/zlib.lib"
   IMPORTED_LOCATION_MINSIZEREL "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/MinSizeRel/leptonica-1.80.0.lib"
   )
 
@@ -69,6 +76,7 @@ set_target_properties(leptonica PROPERTIES
 set_property(TARGET leptonica APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
 set_target_properties(leptonica PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELWITHDEBINFO "CXX"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_RELWITHDEBINFO "C:/vcpkg/installed/x64-windows-static/debug/lib/gif.lib;C:/vcpkg/installed/x64-windows-static/lib/jpeg.lib;C:/vcpkg/installed/x64-windows-static/lib/libpng16.lib;C:/vcpkg/installed/x64-windows-static/lib/zlib.lib;C:/vcpkg/installed/x64-windows-static/lib/tiff.lib;C:/vcpkg/installed/x64-windows-static/lib/lzma.lib;C:/vcpkg/installed/x64-windows-static/lib/jpeg.lib;C:/vcpkg/installed/x64-windows-static/lib/zlib.lib;C:/vcpkg/installed/x64-windows-static/lib/zlib.lib"
   IMPORTED_LOCATION_RELWITHDEBINFO "C:/Liza_stuff/dhack/leptonica/vs16-x64/src/RelWithDebInfo/leptonica-1.80.0.lib"
   )
 

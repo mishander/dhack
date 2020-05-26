@@ -114,7 +114,7 @@
             // INNumberText
             // 
             this.INNumberText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.INNumberText.Location = new System.Drawing.Point(998, 172);
+            this.INNumberText.Location = new System.Drawing.Point(977, 172);
             this.INNumberText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.INNumberText.Name = "INNumberText";
             this.INNumberText.Size = new System.Drawing.Size(309, 22);
@@ -123,7 +123,7 @@
             // DocNumberText
             // 
             this.DocNumberText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.DocNumberText.Location = new System.Drawing.Point(998, 60);
+            this.DocNumberText.Location = new System.Drawing.Point(977, 60);
             this.DocNumberText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DocNumberText.Name = "DocNumberText";
             this.DocNumberText.Size = new System.Drawing.Size(309, 22);
@@ -132,7 +132,7 @@
             // NameText
             // 
             this.NameText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.NameText.Location = new System.Drawing.Point(998, 322);
+            this.NameText.Location = new System.Drawing.Point(977, 322);
             this.NameText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NameText.Name = "NameText";
             this.NameText.Size = new System.Drawing.Size(309, 22);
@@ -141,7 +141,7 @@
             // RecognizedMainText
             // 
             this.RecognizedMainText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.RecognizedMainText.Location = new System.Drawing.Point(998, 360);
+            this.RecognizedMainText.Location = new System.Drawing.Point(977, 360);
             this.RecognizedMainText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RecognizedMainText.Multiline = true;
             this.RecognizedMainText.Name = "RecognizedMainText";
@@ -151,7 +151,7 @@
             // DocNumberDate
             // 
             this.DocNumberDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.DocNumberDate.Location = new System.Drawing.Point(998, 105);
+            this.DocNumberDate.Location = new System.Drawing.Point(977, 105);
             this.DocNumberDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DocNumberDate.Name = "DocNumberDate";
             this.DocNumberDate.Size = new System.Drawing.Size(309, 22);
@@ -161,7 +161,7 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(997, 303);
+            this.label1.Location = new System.Drawing.Point(976, 303);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 17);
             this.label1.TabIndex = 10;
@@ -171,7 +171,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(997, 41);
+            this.label2.Location = new System.Drawing.Point(976, 41);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 17);
@@ -182,7 +182,7 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(997, 86);
+            this.label3.Location = new System.Drawing.Point(976, 86);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 17);
@@ -193,7 +193,7 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(998, 503);
+            this.label4.Location = new System.Drawing.Point(977, 503);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(108, 17);
@@ -216,7 +216,7 @@
             // ApplicantText
             // 
             this.ApplicantText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ApplicantText.Location = new System.Drawing.Point(998, 523);
+            this.ApplicantText.Location = new System.Drawing.Point(977, 523);
             this.ApplicantText.Name = "ApplicantText";
             this.ApplicantText.Size = new System.Drawing.Size(309, 22);
             this.ApplicantText.TabIndex = 15;
@@ -224,7 +224,7 @@
             // INNumberDate
             // 
             this.INNumberDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.INNumberDate.Location = new System.Drawing.Point(998, 221);
+            this.INNumberDate.Location = new System.Drawing.Point(977, 221);
             this.INNumberDate.Name = "INNumberDate";
             this.INNumberDate.Size = new System.Drawing.Size(308, 22);
             this.INNumberDate.TabIndex = 16;
@@ -232,7 +232,7 @@
             // InventionText
             // 
             this.InventionText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.InventionText.Location = new System.Drawing.Point(998, 591);
+            this.InventionText.Location = new System.Drawing.Point(977, 591);
             this.InventionText.Multiline = true;
             this.InventionText.Name = "InventionText";
             this.InventionText.Size = new System.Drawing.Size(310, 90);
@@ -242,7 +242,7 @@
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(997, 153);
+            this.label5.Location = new System.Drawing.Point(976, 153);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(239, 17);
             this.label5.TabIndex = 18;
@@ -252,7 +252,7 @@
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(997, 201);
+            this.label6.Location = new System.Drawing.Point(976, 201);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(200, 17);
             this.label6.TabIndex = 19;
@@ -262,7 +262,7 @@
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(997, 571);
+            this.label7.Location = new System.Drawing.Point(976, 571);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(112, 17);
             this.label7.TabIndex = 20;

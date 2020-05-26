@@ -100,7 +100,7 @@ namespace recognition_test
             this.pictureBox1.Refresh();
             var proc = new Process();
             proc.StartInfo.WorkingDirectory = Environment.CurrentDirectory;
-            proc.StartInfo.FileName = "..\\..\\..\\..\\Tesseract_bin\\tesseract.exe";
+            proc.StartInfo.FileName = "..\\..\\..\\..\\tesseract\\vs16-x64\\bin\\Debug\\tesseract.exe";// "..\\..\\..\\..\\Tesseract_bin\\tesseract.exe";
             proc.StartInfo.Arguments = "-l ukr+eng " + filename + " " + filename;
             proc.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             proc.Start();

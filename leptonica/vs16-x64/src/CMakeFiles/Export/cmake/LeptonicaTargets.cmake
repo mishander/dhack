@@ -51,6 +51,10 @@ endif()
 # Create imported target leptonica
 add_library(leptonica STATIC IMPORTED)
 
+set_target_properties(leptonica PROPERTIES
+  INTERFACE_INCLUDE_DIRECTORIES "C:/vcpkg/installed/x64-windows-static/include;C:/vcpkg/installed/x64-windows-static/include;C:/vcpkg/installed/x64-windows-static/include;C:/vcpkg/installed/x64-windows-static/include;C:/vcpkg/installed/x64-windows-static/include;C:/vcpkg/installed/x64-windows-static/include"
+)
+
 # Load information for each installed configuration.
 get_filename_component(_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
 file(GLOB CONFIG_FILES "${_DIR}/LeptonicaTargets-*.cmake")

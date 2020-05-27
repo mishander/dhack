@@ -14,10 +14,11 @@ namespace Parser
         private static string[] namePatterns = { "КЛОПОТАННЯ", "ЗАЯВА" };
         private static string[] docPatterns = { "[aаu].?20\\d{1,3}.?\\d{0,5}" };
         private static string[] docDatePatterns = { "(?<=([aа].?20\\d{1,3}.?\\d{0,5})).*(\\d{2}\\.\\d{2}\\.\\d{4})", "\\(22\\)[\\s\\S]*?(?=\\n{2,})" };
-        private static string[] applicantPatterns = { "(?<=Заявник)[\\s\\S]*?(?=(\\n{2,})|^Дата|^Номер)" };
+        private static string[] applicantPatterns = { "(?<=Заявник ?)[\\s\\S]*?(?=(\\n{2,})|^Дата|^Номер)" };
         private static string[] innumberPaterns = { "[PCTРСТ]{3}/\\S{2}.?\\d{4}/\\d{6}" };
         private static string[] inDatePattern = { "(?<=[PCTРСТ]{3}/\\S{2}.?\\d{4}/\\d{6}).*(\\d{2}\\.\\d{2}\\.\\d{4})" };
-        private static string[] inventionPatterns = { "(?<=[НП]азва винахо[дл]у\\(корисної моделі\\))\\n*.*\\n.*", "(?<=Назва винаходу)\\n*.*\\n.*" };
+        private static string[] inventionPatterns = { "(?<=[НП]азва винахо[дл]у\\(корисної моделі\\))\\n*.*\\n.*", "(?<=Назва винаходу)\\n*.*\\n.*",
+                                                        "(?<=винахід)\\n*.*\\n.*"};
         private static string[] docTextPatterns = { "(?<=КЛОПОТАННЯ\\n*)[Пп]ро [\\s\\S]*?(?=(\\n{2,}|\\(\\d{2}\\)))" };
 
         private static string RegexTextSinglePattern(string text, string pattern)
@@ -59,13 +60,13 @@ namespace Parser
             //doc number line
             res.Add("DocNumberDate", new KeyValuePair<string, bool>(RegexTextSinglePattern(RegexTextMultiplePattern(line, docDatePatterns), dateRegex), true));
             // applicant
-            res.Add("ApplicantText", new KeyValuePair<string, bool>(RegexTextMultiplePattern(line, applicantPatterns), true));
+            res.Add("ApplicantText", new KeyValuePair<string, bool>(RegexTextMultiplePattern(line, applicantPatterns).Replace(":", String.Empty), true));
 
             res.Add("INNumberText", new KeyValuePair<string, bool>(RegexTextMultiplePattern(line, innumberPaterns), true));
 
             res.Add("INNumberDate", new KeyValuePair<string, bool>(RegexTextSinglePattern(RegexTextMultiplePattern(line, inDatePattern), dateRegex), true));
 
-            res.Add("InventionText", new KeyValuePair<string, bool>(RegexTextMultiplePattern(line, inventionPatterns), true));
+            res.Add("InventionText", new KeyValuePair<string, bool>(RegexTextMultiplePattern(line, inventionPatterns).Replace(":", String.Empty), true));
 
             return res;
         }

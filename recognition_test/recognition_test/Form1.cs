@@ -25,40 +25,47 @@ namespace recognition_test
         private string[] files;
         private int current_index = 0;
         private static HashSet<string> hash = new HashSet<string>(Resources.words.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries));
+
+        private static string MakeLineBeautiful(string line)
+        {
+            string res = line.Trim().TrimStart('\r', '\n');
+            return Regex.Replace(res, @"\n", " ", RegexOptions.Multiline);
+        }
+
         private void RegexSearch(string line)
         {
             Dictionary<string, KeyValuePair<string, bool>> res = RegexParser.RegexSearch(line);
             if (res.TryGetValue("NameText", out KeyValuePair<string, bool> nameText))
             {
-                NameText.Text = nameText.Key;
+                NameText.Text = MakeLineBeautiful(nameText.Key);
             }
             if (res.TryGetValue("RecognizedMainText", out KeyValuePair<string, bool> mainText))
             {
-                RecognizedMainText.Text = mainText.Key;
+                RecognizedMainText.Text = MakeLineBeautiful(mainText.Key);
             }
             if (res.TryGetValue("DocNumberText", out KeyValuePair<string, bool> docNum))
             {
-                DocNumberText.Text = docNum.Key;
+                DocNumberText.Text = MakeLineBeautiful(docNum.Key);
             }
             if (res.TryGetValue("DocNumberDate", out KeyValuePair<string, bool> docDate))
             {
-                DocNumberDate.Text = docDate.Key;
+                DocNumberDate.Text = MakeLineBeautiful(docDate.Key);
             }
             if (res.TryGetValue("ApplicantText", out KeyValuePair<string, bool> appName))
             {
-                ApplicantText.Text = appName.Key;
+                ApplicantText.Text = MakeLineBeautiful(appName.Key);
             }
             if (res.TryGetValue("INNumberText", out KeyValuePair<string, bool> intext))
             {
-                INNumberText.Text = intext.Key;
+                INNumberText.Text = MakeLineBeautiful(intext.Key);
             }
             if (res.TryGetValue("INNumberDate", out KeyValuePair<string, bool> indate))
             {
-                INNumberDate.Text = indate.Key;
+                INNumberDate.Text = MakeLineBeautiful(indate.Key);
             }
             if (res.TryGetValue("InventionText", out KeyValuePair<string, bool> invention))
             {
-                InventionText.Text = invention.Key;
+                InventionText.Text = MakeLineBeautiful(invention.Key);
             }
         }
 
@@ -102,7 +109,8 @@ namespace recognition_test
             this.pictureBox1.Refresh();
             var proc = new Process();
             proc.StartInfo.WorkingDirectory = Environment.CurrentDirectory;
-            proc.StartInfo.FileName = "..\\..\\..\\..\\tesseract\\vs16-x64\\bin\\Debug\\tesseract.exe";// "..\\..\\..\\..\\Tesseract_bin\\tesseract.exe";
+            proc.StartInfo.FileName = "..\\..\\..\\..\\Tesseract_bin\\tesseract.exe";
+            //"..\\..\\..\\..\\tesseract\\vs16-x64\\bin\\Debug\\tesseract.exe";//
             proc.StartInfo.Arguments = "-l ukr+eng " + filename + " " + filename;
             proc.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             proc.Start();
@@ -117,7 +125,6 @@ namespace recognition_test
                     // Read the stream to a string, and write the string to the console.
                     line = sr.ReadToEnd();
                     line = Regex.Replace(line, @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline);
-                    //line = Regex.Replace(line, @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline);
                     this.MainText.Text = line;
                 }
             }
@@ -133,14 +140,14 @@ namespace recognition_test
             string str = "";
             foreach (Control x in this.Controls)
             {
-                if ((x is TextBox) && (((TextBox)x).Text != ""))
+                if ((x is RichTextBox) && (((RichTextBox)x).Text != ""))
                 {
                     string ss = "";
-                    foreach (string s in ((TextBox)x).Text.Split(new char[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries))
+                    foreach (string s in ((RichTextBox)x).Text.Split(new char[] { ' ', '\t', '\n' }, StringSplitOptions.RemoveEmptyEntries))
                     {
                         //remove all punctuation + tolower
-                        string s_stripped = new string(s.Where(c => !char.IsPunctuation(c)).ToArray()).ToLower(); ;
-                        if (!hash.Contains(s_stripped))
+                        string s_stripped = new string(s.Where( c => (!char.IsPunctuation(c) || c.Equals('\'')) ).ToArray()).ToLower(); ;
+                        if (!s_stripped.Any(c => char.IsDigit(c)) && !hash.Contains(s_stripped))
                         {
                             ss += s + " ";
                         }
@@ -154,10 +161,10 @@ namespace recognition_test
 
         public Form1()
         {
-            InitializeComponent();       
+            InitializeComponent();
             string line = MainText.Text;
             RegexSearch(line);
-            //Open();
+            Open();
             SetForegroundWindow(Handle.ToInt32());
         }
 

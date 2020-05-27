@@ -11,6 +11,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
@@ -119,16 +120,22 @@ namespace recognition_test
             this.InventionText.Clear();
             this.pictureBox1.Image = Image.FromFile(filename);
             this.pictureBox1.Refresh();
-            var proc = new Process();
-            proc.StartInfo.WorkingDirectory = Environment.CurrentDirectory;
-            proc.StartInfo.FileName = "..\\..\\..\\..\\Tesseract_bin\\tesseract.exe";
-            //"..\\..\\..\\..\\tesseract\\vs16-x64\\bin\\Debug\\tesseract.exe";//
-            proc.StartInfo.Arguments = "-l ukr+eng " + filename + " " + filename;
-            proc.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-            proc.Start();
-            proc.WaitForExit();
-            var exitCode = proc.ExitCode;
-            proc.Close();
+
+            new Thread(() =>
+            {
+                Thread.CurrentThread.IsBackground = true;
+                var proc = new Process();
+                proc.StartInfo.WorkingDirectory = Environment.CurrentDirectory;
+                proc.StartInfo.FileName = "..\\..\\..\\..\\Tesseract_bin\\tesseract.exe";
+                //"..\\..\\..\\..\\tesseract\\vs16-x64\\bin\\Debug\\tesseract.exe";//
+                proc.StartInfo.Arguments = "-l ukr+eng " + filename + " " + filename;
+                proc.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                proc.Start();
+                proc.WaitForExit();
+                var exitCode = proc.ExitCode;
+                proc.Close();
+            }).Start();
+
             string line = "";
             try
             {   // Open the text file using a stream reader.

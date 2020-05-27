@@ -119,7 +119,7 @@ namespace recognition_test
             this.pictureBox1.Image = Image.FromFile(filename);
             this.pictureBox1.Refresh();
 
-            new Thread(() =>
+            Thread t1 = new Thread(() =>
             {
                 Thread.CurrentThread.IsBackground = true;
                 var proc = new Process();
@@ -132,24 +132,32 @@ namespace recognition_test
                 proc.WaitForExit();
                 var exitCode = proc.ExitCode;
                 proc.Close();
-            }).Start();
-
+            });
+            t1.Start();
+            Thread.Sleep(100);
             string line = "";
-            try
-            {   // Open the text file using a stream reader.
-                using (StreamReader sr = new StreamReader(filename + ".txt"))
+            while (true)
+            {
+                Thread.Sleep(100);
+                try
+                {   // Open the text file using a stream reader.
+                    using (StreamReader sr = new StreamReader(filename + ".txt"))
+                    {
+                        // Read the stream to a string, and write the string to the console.
+                        line = sr.ReadToEnd();
+                        line = Regex.Replace(line, @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline);
+                        this.MainText.Text = line;
+                        sr.Close();
+                        break;
+                    }
+                }
+                catch (IOException ee)
                 {
-                    // Read the stream to a string, and write the string to the console.
-                    line = sr.ReadToEnd();
-                    line = Regex.Replace(line, @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline);
-                    this.MainText.Text = line;
+                    Console.WriteLine("The file could not be read:");
+                    Console.WriteLine(ee.Message);
                 }
             }
-            catch (IOException ee)
-            {
-                Console.WriteLine("The file could not be read:");
-                Console.WriteLine(ee.Message);
-            }
+            
 
             //regex:
             RegexSearch(line);

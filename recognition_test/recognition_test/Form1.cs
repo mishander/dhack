@@ -100,10 +100,8 @@ namespace recognition_test
                 }
             }
             string filename = files[current_index];
-            current_index++;
             LoadFile(filename);
             buttonNext.Enabled = true;
-            buttonPrev.Enabled = true;
         }
 
         private void LoadFile(string filename)
@@ -212,12 +210,18 @@ namespace recognition_test
 
         private void buttonPrev_Click(object sender, EventArgs e)
         {
-            LoadFile(files[current_index--]);
+            if (current_index == 1)
+                buttonPrev.Enabled = false;
+            buttonNext.Enabled = true;
+            LoadFile(files[--current_index]);
         }
 
         private void buttonNext_Click(object sender, EventArgs e)
         {
-            LoadFile(files[current_index++]);
+            if (current_index == files.Length - 2)
+                buttonNext.Enabled = false;
+            buttonPrev.Enabled = true;
+            LoadFile(files[++current_index]);
         }
     }
 }

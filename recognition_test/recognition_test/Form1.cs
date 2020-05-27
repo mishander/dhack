@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Parser;
+using recognition_test.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,10 +12,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Input;
-using Parser;
-using recognition_test.Properties;
 
 namespace recognition_test
 {
@@ -25,6 +26,16 @@ namespace recognition_test
         private string[] files;
         private int current_index = 0;
         private static HashSet<string> hash = new HashSet<string>(Resources.words.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries));
+
+        public static void AppendText(RichTextBox box, string text, System.Drawing.Color color)
+        {
+            box.SelectionStart = box.TextLength;
+            box.SelectionLength = 0;
+
+            box.SelectionColor = color;
+            box.AppendText(text);
+            box.SelectionColor = box.ForeColor;
+        }
 
         private static string MakeLineBeautiful(string line)
         {
@@ -82,7 +93,8 @@ namespace recognition_test
                 {
                     files = Directory.GetFiles(fbd.SelectedPath, "*.jpg");
                 }
-                else {
+                else
+                {
                     Environment.Exit(1);
                 }
             }
@@ -143,17 +155,27 @@ namespace recognition_test
                 if ((x is RichTextBox) && (((RichTextBox)x).Text != ""))
                 {
                     string ss = "";
-                    foreach (string s in ((RichTextBox)x).Text.Split(new char[] { ' ', '\t', '\n' }, StringSplitOptions.RemoveEmptyEntries))
+                    string[] richtext = ((RichTextBox)x).Text.Split(new char[] { ' ', '\t', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                    ((RichTextBox)x).Clear();
+                    foreach (string s in richtext)
                     {
                         //remove all punctuation + tolower
-                        string s_stripped = new string(s.Where( c => (!char.IsPunctuation(c) || c.Equals('\'')) ).ToArray()).ToLower(); ;
+                        string s_stripped = new string(s.Where(c => (!char.IsPunctuation(c) || c.Equals('\''))).ToArray()).ToLower(); ;
                         if (!s_stripped.Any(c => char.IsDigit(c)) && !hash.Contains(s_stripped))
                         {
                             ss += s + " ";
+                            AppendText(((RichTextBox)x), s + " ", Color.Red);
+                        }
+                        else
+                        {
+                            AppendText(((RichTextBox)x), s + " ", Color.Black);
                         }
                     }
                     if (ss.Length != 0)
                         str += ss + Environment.NewLine;
+
+
+
                 }
             }
             wrongText.Text = str;

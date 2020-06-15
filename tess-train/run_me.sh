@@ -12,7 +12,7 @@ sh data/tesstrain.sh \
   --langdata_dir data/langdata_lstm \
   --tessdata_dir data/tessdata \
   --save_box_tiff \
-  --maxpages 25\
+  --maxpages 50\
   --overwrite \
   --training_text data/langdata_lstm/ukr/ukr.training_text \
   --wordlist data/langdata_lstm/ukr/ukr.wordlist \
@@ -30,7 +30,7 @@ sh data/tesstrain.sh \
   --traineddata data/train/ukr/ukr.traineddata \
   --old_traineddata data/tessdata/ukr.traineddata \
   --train_listfile data/train/ukr.training_files.txt \
-  --max_iterations 3600
+  --max_iterations 5000
   
   #Update eng.traineddata according to training language
   #Update impact_checkpoint and Impact.traineddata according to training font name

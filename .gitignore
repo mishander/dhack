@@ -1,0 +1,7 @@
+/tess-train/data/train
+/tess-train/output
+/recognition_test/Parser/obj/Debug
+/recognition_test/Parser/obj/Release
+/recognition_test/.vs
+/recognition_test/recognition_test/obj/Debug
+/recognition_test/recognition_test/obj/Release
